@@ -38,16 +38,16 @@ This solution contains in the most part some application created using .NET 6.0 
 So, these .NET application that compose solution are:
 1. **Bitstamp.LiveOrderBook.Domain** -
 2. **Bitstamp.LiveOrderBook.WorkerService** - 
-3. **Bitstamp.LiveOrderBook.BTC.Function** - 
-4. **Bitstamp.LiveOrderBook.BTC.Function** -
-5. **Bitstamp.LiveOrderBook.API** - 
+3. **Bitstamp.LiveOrderBook.BtcUsd.Function** - 
+4. **Bitstamp.LiveOrderBook.EthUsd.Function** -
+5. **Bitstamp.LiveOrderBook.Api** - 
 
 ### Solution Design
 #### Default
 
-#### AWS
+#### Purpose to AWS
 
-#### Azure
+#### Purpose to Azure
 
 
 ## <a name="howtorun">How to run?</a>
