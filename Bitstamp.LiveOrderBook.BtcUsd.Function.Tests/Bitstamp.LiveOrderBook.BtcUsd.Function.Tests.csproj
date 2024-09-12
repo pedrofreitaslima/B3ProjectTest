@@ -24,7 +24,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Bitstamp.LiveOrderBook.WorkerService\Bitstamp.LiveOrderBook.WorkerService.csproj" />
+      <ProjectReference Include="..\Bitstamp.LiveOrderBook.BtcUsd.Function\Bitstamp.LiveOrderBook.BtcUsd.Function.csproj" />
     </ItemGroup>
 
 </Project>
