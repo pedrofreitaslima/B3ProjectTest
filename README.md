@@ -1,0 +1,1 @@
+# Bitstamp WebSocket Project
