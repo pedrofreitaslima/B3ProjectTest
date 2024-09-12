@@ -1,0 +1,11 @@
+/home/pedro/repos/github/b3-project/Timestamp.LiveOrderBook/Timestamp.LiveOrderBook.Domain/bin/Debug/net6.0/Timestamp.LiveOrderBook.Domain.deps.json
+/home/pedro/repos/github/b3-project/Timestamp.LiveOrderBook/Timestamp.LiveOrderBook.Domain/bin/Debug/net6.0/Timestamp.LiveOrderBook.Domain.dll
+/home/pedro/repos/github/b3-project/Timestamp.LiveOrderBook/Timestamp.LiveOrderBook.Domain/bin/Debug/net6.0/Timestamp.LiveOrderBook.Domain.pdb
+/home/pedro/repos/github/b3-project/Timestamp.LiveOrderBook/Timestamp.LiveOrderBook.Domain/obj/Debug/net6.0/Timestamp.LiveOrderBook.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/pedro/repos/github/b3-project/Timestamp.LiveOrderBook/Timestamp.LiveOrderBook.Domain/obj/Debug/net6.0/Timestamp.LiveOrderBook.Domain.AssemblyInfoInputs.cache
+/home/pedro/repos/github/b3-project/Timestamp.LiveOrderBook/Timestamp.LiveOrderBook.Domain/obj/Debug/net6.0/Timestamp.LiveOrderBook.Domain.AssemblyInfo.cs
+/home/pedro/repos/github/b3-project/Timestamp.LiveOrderBook/Timestamp.LiveOrderBook.Domain/obj/Debug/net6.0/Timestamp.LiveOrderBook.Domain.csproj.CoreCompileInputs.cache
+/home/pedro/repos/github/b3-project/Timestamp.LiveOrderBook/Timestamp.LiveOrderBook.Domain/obj/Debug/net6.0/Timestamp.LiveOrderBook.Domain.dll
+/home/pedro/repos/github/b3-project/Timestamp.LiveOrderBook/Timestamp.LiveOrderBook.Domain/obj/Debug/net6.0/refint/Timestamp.LiveOrderBook.Domain.dll
+/home/pedro/repos/github/b3-project/Timestamp.LiveOrderBook/Timestamp.LiveOrderBook.Domain/obj/Debug/net6.0/Timestamp.LiveOrderBook.Domain.pdb
+/home/pedro/repos/github/b3-project/Timestamp.LiveOrderBook/Timestamp.LiveOrderBook.Domain/obj/Debug/net6.0/ref/Timestamp.LiveOrderBook.Domain.dll
