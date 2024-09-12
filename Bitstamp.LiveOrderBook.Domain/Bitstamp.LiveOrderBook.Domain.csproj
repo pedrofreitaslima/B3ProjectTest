@@ -6,4 +6,13 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Entities\DynamoDB" />
+      <Folder Include="Entities\Kafka" />
+      <Folder Include="Entities\MongoDB" />
+      <Folder Include="Entities\RabbitMQ" />
+      <Folder Include="Entities\SNS" />
+      <Folder Include="Entities\SQS" />
+    </ItemGroup>
+
 </Project>
