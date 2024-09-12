@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Bitstamp.LiveOrderBook.EthUsd.Function": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7266",
+      "launchBrowser": false
+    }
+  }
+}

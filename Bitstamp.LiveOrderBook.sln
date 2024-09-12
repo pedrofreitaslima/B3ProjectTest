@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitstamp.LiveOrderBook.Work
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitstamp.LiveOrderBook.WorkerService.Tests", "Bitstamp.LiveOrderBook.WorkerService.Tests\Bitstamp.LiveOrderBook.WorkerService.Tests.csproj", "{CEF695CA-64CA-417F-A511-B8B0FA899020}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitstamp.LiveOrderBook.BtcUsd.Function", "Bitstamp.LiveOrderBook.BtcUsd.Function\Bitstamp.LiveOrderBook.BtcUsd.Function.csproj", "{44769E8E-BB87-4C42-A42F-CF056C560E8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitstamp.LiveOrderBook.EthUsd.Function", "Bitstamp.LiveOrderBook.EthUsd.Function\Bitstamp.LiveOrderBook.EthUsd.Function.csproj", "{90254601-4A35-46F4-93AD-07F47BFD1E86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,13 @@ Global
 		{CEF695CA-64CA-417F-A511-B8B0FA899020}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEF695CA-64CA-417F-A511-B8B0FA899020}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEF695CA-64CA-417F-A511-B8B0FA899020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44769E8E-BB87-4C42-A42F-CF056C560E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44769E8E-BB87-4C42-A42F-CF056C560E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44769E8E-BB87-4C42-A42F-CF056C560E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44769E8E-BB87-4C42-A42F-CF056C560E8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90254601-4A35-46F4-93AD-07F47BFD1E86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90254601-4A35-46F4-93AD-07F47BFD1E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90254601-4A35-46F4-93AD-07F47BFD1E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90254601-4A35-46F4-93AD-07F47BFD1E86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
