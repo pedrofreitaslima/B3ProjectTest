@@ -5,8 +5,8 @@ namespace Bitstamp.LiveOrderBook.Domain.Tests.Constants;
 
 public class ShareConstantTest
 {
-    [Fact(DisplayName = "Validate connection string name")]
-    public void Should_ConnectionString_Validate()
+    [Fact(DisplayName = "Validate web socket configuration connection string name")]
+    public void Should_WebSocketConfiguration_ConnectionString_Validate()
     {
         // Arrange
         string connectionStringName = "wss://ws.bitstamp.net";
@@ -18,8 +18,8 @@ public class ShareConstantTest
         connectionStringValid.Should().BeTrue();
     }
 
-    [Fact(DisplayName = "Validate channel name")]
-    public void Should_ChannelName_Validate()
+    [Fact(DisplayName = "Validate web socket configuration channel name")]
+    public void Should_WebSocketConfiguration_ChannelName_Validate()
     {
         // Arrange
         string channelName = "live_order_book";
@@ -31,10 +31,10 @@ public class ShareConstantTest
         channelNameValid.Should().BeTrue();
     }
     
-    [Theory(DisplayName = "Validate currencies pairs name")]
+    [Theory(DisplayName = "Validate web socket configuration currencies pairs name")]
     [InlineData("btcusd")]
     [InlineData("ethusd")]
-    public void Should_CurrencyPairs_Validate(string currencyPairName)
+    public void Should_WebSocketConfiguration_CurrencyPairs_Validate(string currencyPairName)
     {
         // Arrange   
         var currenciesPairs = GetCurrencisPairsConstants();

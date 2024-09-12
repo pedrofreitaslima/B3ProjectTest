@@ -7,13 +7,20 @@ public class LiveOrderBookEth
 {
     public LiveOrderBookEth()
     {
-        _currencyPair = SharedConstant.WebSocketConfiguration.CurrencyPairBtc;
-        _correlationId = Guid.NewGuid();
+        CurrencyPair = SharedConstant.WebSocketConfiguration.CurrencyPairEth;
+        CorrelationId = Guid.NewGuid();
     }
-    
-    private readonly Guid _correlationId;
-    private readonly string _currencyPair;
-    
+
+    /// <summary>
+    /// Unique number (hash) to identity dto event
+    /// </summary>
+    [JsonPropertyName("correlation_id")]
+    public Guid CorrelationId { get; init; }
+    /// <summary>
+    /// Currency pair name
+    /// </summary>
+    [JsonPropertyName("currency_pair")]
+    public string CurrencyPair { get; init; }
     /// <summary>
     /// List of top 100 bids
     /// </summary>
