@@ -49,8 +49,8 @@ public class ShareConstantTest
     private IEnumerable<string> GetCurrencisPairsConstants()
     {
         List<string> currenciesPairs = new List<string>();
-        currenciesPairs.Add(SharedConstant.WebSocketConfiguration.CurrencyPairBtc);
-        currenciesPairs.Add(SharedConstant.WebSocketConfiguration.CurrencyPairEth);
+        currenciesPairs.Add(SharedConstant.WebSocketConfiguration.CurrencyPairBtcUsd);
+        currenciesPairs.Add(SharedConstant.WebSocketConfiguration.CurrencyPairEthUsd);
         return currenciesPairs;
     }
 }

@@ -4,9 +4,9 @@ public static partial class SharedConstant
 {
     public static class WebSocketConfiguration
     {
-        public static string ConnectionString = "wss://ws.bitstamp.net";
-        public static string ChannelName = "live_order_book";
-        public static string CurrencyPairBtc = "btcusd";
-        public static string CurrencyPairEth = "ethusd";
+        public static readonly string ConnectionString = "wss://ws.bitstamp.net";
+        public static readonly string ChannelName = "live_order_book";
+        public static readonly string CurrencyPairBtcUsd = "btcusd";
+        public static readonly string CurrencyPairEthUsd = "ethusd";
     }
 }

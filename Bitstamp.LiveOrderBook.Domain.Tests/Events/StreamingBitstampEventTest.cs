@@ -19,12 +19,12 @@ public class StreamingBitstampEventTest
         liveOrderBookEvent.Asks = AsksFake.CreateAsks();
         
         // Act
-        streamingBitstampEvent.ChannelName = SharedConstant.WebSocketConfiguration.CurrencyPairBtc;
+        streamingBitstampEvent.ChannelName = SharedConstant.WebSocketConfiguration.CurrencyPairBtcUsd;
         streamingBitstampEvent.EventName = SharedConstant.WebSocketConfiguration.ChannelName;
         streamingBitstampEvent.LiveOrderBookEvent = liveOrderBookEvent;
 
         // Assert
-        bool valid = streamingBitstampEvent.ChannelName.Equals(SharedConstant.WebSocketConfiguration.CurrencyPairBtc);
+        bool valid = streamingBitstampEvent.ChannelName.Equals(SharedConstant.WebSocketConfiguration.CurrencyPairBtcUsd);
         valid.Should().BeTrue();
 
         valid = streamingBitstampEvent.EventName.Equals(SharedConstant.WebSocketConfiguration.ChannelName);

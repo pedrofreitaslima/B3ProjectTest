@@ -7,7 +7,7 @@ public class LiveOrderBookEth
 {
     public LiveOrderBookEth()
     {
-        CurrencyPair = SharedConstant.WebSocketConfiguration.CurrencyPairEth;
+        CurrencyPair = SharedConstant.WebSocketConfiguration.CurrencyPairEthUsd;
         CorrelationId = Guid.NewGuid();
     }
 

@@ -7,7 +7,7 @@ public class LiveOrderBookBtc
 {
     public LiveOrderBookBtc()
     {
-        CurrencyPair = SharedConstant.WebSocketConfiguration.CurrencyPairBtc;
+        CurrencyPair = SharedConstant.WebSocketConfiguration.CurrencyPairBtcUsd;
         CorrelationId = Guid.NewGuid();
     }
     /// <summary>
