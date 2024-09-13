@@ -15,28 +15,27 @@ public class RabbitMqRepository : IRabbitMqRepository
         _logger = logger;
     }
     
-    public async Task SendEvent(LiveOrderBookEvent liveOrderBookEvent)
+    public async Task SendEvent(StreamingBitstampEvent streamingBitstampEvent)
     {
         _logger.LogInformation("Sending message to rabbitmq");
         var factory = new ConnectionFactory { HostName = "localhost" };
         using var connection = await factory.CreateConnectionAsync();
         using var channel = await connection.CreateChannelAsync();
-        var queueName = "live_order_book_btcusd";
 
         await channel.QueueDeclareAsync(
-            queue: queueName,
+            queue: streamingBitstampEvent.ChannelName,
             durable: false,
             exclusive: false,
             autoDelete: false,
             arguments: null
         );
 
-        var message = JsonSerializer.Serialize(liveOrderBookEvent);
+        var message = JsonSerializer.Serialize(streamingBitstampEvent.LiveOrderBookEvent);
         var body = Encoding.UTF8.GetBytes(message);
 
         await channel.BasicPublishAsync(
             "",
-            queueName,
+            streamingBitstampEvent.ChannelName,
             false,
             body
         );

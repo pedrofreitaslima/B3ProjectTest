@@ -15,8 +15,8 @@ public class SubscribeChannelEntity
     {
         return @"{""event"": """ 
                + _eventName +
-               @""",""data"": {""channel"": ""{"
+               @""",""data"": {""channel"": """
                + Data.ChannelName +
-               @"}""}}";
+               @"""}}";
     }
 }

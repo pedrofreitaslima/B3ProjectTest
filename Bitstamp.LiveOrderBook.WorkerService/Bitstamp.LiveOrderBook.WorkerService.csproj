@@ -28,4 +28,10 @@
     <ItemGroup>
       <ProjectReference Include="..\Bitstamp.LiveOrderBook.Domain\Bitstamp.LiveOrderBook.Domain.csproj" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.AspNetCore.WebSockets">
+        <HintPath>..\..\..\..\.nuget\packages\microsoft.aspnetcore.app.ref\6.0.31\ref\net6.0\Microsoft.AspNetCore.WebSockets.dll</HintPath>
+      </Reference>
+    </ItemGroup>
 </Project>

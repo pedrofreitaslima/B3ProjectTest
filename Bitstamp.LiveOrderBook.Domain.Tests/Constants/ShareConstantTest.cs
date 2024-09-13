@@ -22,7 +22,7 @@ public class ShareConstantTest
     public void Should_WebSocketConfiguration_ChannelName_Validate()
     {
         // Arrange
-        string channelName = "live_order_book";
+        string channelName = "order_book";
         
         // Act
         var channelNameValid = SharedConstant.WebSocketConfiguration.ChannelName.Equals(channelName);

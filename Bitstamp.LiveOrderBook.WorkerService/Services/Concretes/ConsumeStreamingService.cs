@@ -10,17 +10,17 @@ namespace Bitstamp.LiveOrderBook.WorkerService.Services.Concretes;
 
 public class ConsumeStreamingService : IConsumeStreamingService
 {
-    private readonly ILogger<ConsumeStreamingService> _logger;
+    private readonly ILogger _logger;
     private readonly ClientWebSocket _clientWebSocket;
     private readonly IRabbitMqRepository _rabbitMqRepository;
     
-    public ConsumeStreamingService(ILogger<ConsumeStreamingService> logger,
-        ClientWebSocket clientWebSocket,
+    public ConsumeStreamingService(ILogger logger,
         IRabbitMqRepository rabbitMqRepository)
     {
         _logger = logger;
-        _clientWebSocket = clientWebSocket;
+        _clientWebSocket = new ClientWebSocket();
         _rabbitMqRepository = rabbitMqRepository;
+        
     }
 
     public async Task SubscribeInChannel(byte[] data, CancellationToken stoppingToken)
@@ -59,7 +59,7 @@ public class ConsumeStreamingService : IConsumeStreamingService
         StreamingBitstampEvent eventStreaming = JsonSerializer.Deserialize<StreamingBitstampEvent>(dataEvent) ??
                                                throw new ArgumentNullException("Streaming data is null");
 
-        await _rabbitMqRepository.SendEvent(eventStreaming.LiveOrderBookEvent);
+        await _rabbitMqRepository.SendEvent(eventStreaming);
         
         _logger.LogInformation("Worker consumed the live order book streaming");
     }

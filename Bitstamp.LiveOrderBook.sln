@@ -11,10 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitstamp.LiveOrderBook.Work
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitstamp.LiveOrderBook.WorkerService.Tests", "Bitstamp.LiveOrderBook.WorkerService.Tests\Bitstamp.LiveOrderBook.WorkerService.Tests.csproj", "{CEF695CA-64CA-417F-A511-B8B0FA899020}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitstamp.LiveOrderBook.BtcUsd.Function", "Bitstamp.LiveOrderBook.BtcUsd.Function\Bitstamp.LiveOrderBook.BtcUsd.Function.csproj", "{44769E8E-BB87-4C42-A42F-CF056C560E8B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitstamp.LiveOrderBook.EthUsd.Function", "Bitstamp.LiveOrderBook.EthUsd.Function\Bitstamp.LiveOrderBook.EthUsd.Function.csproj", "{90254601-4A35-46F4-93AD-07F47BFD1E86}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitstamp.LiveOrderBook.BtcUsd.Function.Tests", "Bitstamp.LiveOrderBook.BtcUsd.Function.Tests\Bitstamp.LiveOrderBook.BtcUsd.Function.Tests.csproj", "{42246FFE-83E9-4EA8-9905-49EDE54C7DA6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitstamp.LiveOrderBook.EthUsd.Function.Tests", "Bitstamp.LiveOrderBook.EthUsd.Function.Tests\Bitstamp.LiveOrderBook.EthUsd.Function.Tests.csproj", "{CFEE959C-B0A6-4376-ABC9-B4C403E23AD8}"
@@ -22,6 +18,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitstamp.LiveOrderBook.Api", "Bitstamp.LiveOrderBook.Api\Bitstamp.LiveOrderBook.Api.csproj", "{639DADA6-E08E-4034-B5ED-795C4CDE9F09}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitstamp.LiveOrderBook.Api.Tests", "Bitstamp.LiveOrderBook.Api.Tests\Bitstamp.LiveOrderBook.Api.Tests.csproj", "{07DA8717-0C40-49C6-B5E5-F55157EC0C9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitstamp.LiveOrderBook.BtcUsd.Function", "Bitstamp.LiveOrderBook.BtcUsd.Function\Bitstamp.LiveOrderBook.BtcUsd.Function.csproj", "{2D40FA83-76AE-403A-AE39-1D75B1459B57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitstamp.LiveOrderBook.EthUsd.Function", "Bitstamp.LiveOrderBook.EthUsd.Function\Bitstamp.LiveOrderBook.EthUsd.Function.csproj", "{C6CC80A6-68C1-4AAC-9FF4-0B0B9BE62DEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,14 +48,6 @@ Global
 		{CEF695CA-64CA-417F-A511-B8B0FA899020}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEF695CA-64CA-417F-A511-B8B0FA899020}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEF695CA-64CA-417F-A511-B8B0FA899020}.Release|Any CPU.Build.0 = Release|Any CPU
-		{44769E8E-BB87-4C42-A42F-CF056C560E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44769E8E-BB87-4C42-A42F-CF056C560E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44769E8E-BB87-4C42-A42F-CF056C560E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44769E8E-BB87-4C42-A42F-CF056C560E8B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{90254601-4A35-46F4-93AD-07F47BFD1E86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{90254601-4A35-46F4-93AD-07F47BFD1E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{90254601-4A35-46F4-93AD-07F47BFD1E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{90254601-4A35-46F4-93AD-07F47BFD1E86}.Release|Any CPU.Build.0 = Release|Any CPU
 		{42246FFE-83E9-4EA8-9905-49EDE54C7DA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{42246FFE-83E9-4EA8-9905-49EDE54C7DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42246FFE-83E9-4EA8-9905-49EDE54C7DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -72,5 +64,13 @@ Global
 		{07DA8717-0C40-49C6-B5E5-F55157EC0C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07DA8717-0C40-49C6-B5E5-F55157EC0C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07DA8717-0C40-49C6-B5E5-F55157EC0C9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D40FA83-76AE-403A-AE39-1D75B1459B57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D40FA83-76AE-403A-AE39-1D75B1459B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D40FA83-76AE-403A-AE39-1D75B1459B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D40FA83-76AE-403A-AE39-1D75B1459B57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6CC80A6-68C1-4AAC-9FF4-0B0B9BE62DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6CC80A6-68C1-4AAC-9FF4-0B0B9BE62DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6CC80A6-68C1-4AAC-9FF4-0B0B9BE62DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6CC80A6-68C1-4AAC-9FF4-0B0B9BE62DEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

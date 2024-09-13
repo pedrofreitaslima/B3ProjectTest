@@ -8,26 +8,26 @@ using Bitstamp.LiveOrderBook.WorkerService.Services.Concretes;
 
 namespace Bitstamp.LiveOrderBook.WorkerService.Entrypoints.Concretes;
 
-public class LiveOrderBookBtcUsdEntrypoint : IEntrypointBase
+public class LiveOrderBookEthUsdEntrypoint : IEntrypointBase
 {
-    private readonly ILogger<LiveOrderBookBtcUsdEntrypoint> _logger;
+    private readonly ILogger<LiveOrderBookEthUsdEntrypoint> _logger;
     private readonly string _channelName;
     private readonly string _currencyPairName;
     private SubscribeChannelEntity? _subscribeChannelEntity;
     private UnsubscribeChannelEntity? _unsubscribeChannelEntity;
     private readonly IConsumeStreamingService _consumeStreamingService;
 
-    public LiveOrderBookBtcUsdEntrypoint(ILogger<LiveOrderBookBtcUsdEntrypoint> logger,
+    public LiveOrderBookEthUsdEntrypoint(ILogger<LiveOrderBookEthUsdEntrypoint> logger,
         IRabbitMqRepository rabbitMqRepository)
     {
         _logger = logger;
         _consumeStreamingService = new ConsumeStreamingService(logger,rabbitMqRepository);
         _channelName = SharedConstant.WebSocketConfiguration.ChannelName;
-        _currencyPairName = SharedConstant.WebSocketConfiguration.CurrencyPairBtcUsd;
+        _currencyPairName = SharedConstant.WebSocketConfiguration.CurrencyPairEthUsd;
     }
     public async Task Run(CancellationToken stoppingToken)
     {
-        _logger.LogInformation("Work service running live order book btc/usd entrypoint");
+        _logger.LogInformation("Work service running live order book eth/usd entrypoint");
         CreateRequestsToWebSocket();
         if (_subscribeChannelEntity != null &&
             _unsubscribeChannelEntity != null)
