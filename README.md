@@ -36,11 +36,12 @@ This project was create to show for **B3 Company** as a test of knowlodges and t
 ## <a name="solutionarchitectworks">How to works this solution architect?</a>
 This solution contains in the most part some application created using .NET 6.0 and C# language, except the frontend screen that should show in live the highest, lowest, average in the last 5 seconds, and average in all the time of USD price for each cryptocurrency.
 So, these .NET application that compose solution are:
-1. **Bitstamp.LiveOrderBook.Domain** -
-2. **Bitstamp.LiveOrderBook.WorkerService** - 
-3. **Bitstamp.LiveOrderBook.BtcUsd.Function** - 
-4. **Bitstamp.LiveOrderBook.EthUsd.Function** -
-5. **Bitstamp.LiveOrderBook.Api** - 
+1. **Bitstamp.LiveOrderBook.Domain** - Contains all shared contracts for solution being them entities, dtos, events, and constants
+2. **Bitstamp.LiveOrderBook.WorkerService** - This project is responsable to consume using web socket all data in bitstamp for channel live order book
+3. **Bitstamp.LiveOrderBook.BtcUsd.Function** - This project will be received events of currency pair equal BTC/USD of queue (rabbitmq, sqs, or service bus) and save this data in database (mongodb, dynamodb, or cosmos db)
+4. **Bitstamp.LiveOrderBook.EthUsd.Function** - This project will be received events of currency pair equal ETH/USD of queue (rabbitmq, sqs, or service bus) and save this data in database (mongodb, dynamodb, or cosmos db)
+5. **Bitstamp.LiveOrderBook.Api** - This project is available endpoints to user query the current price USD for some cryptocurrencies being them BTC or ETH.
+6; **Bitstamp.LiveOrderBook.Frontend** - This project is responsable to show highest, lowest, average of the last 5 minutes, and average all the time to som cryptocurrency being them BTC or ETH, and update the data shower each 5 minutes.
 
 ### Solution Design
 #### Default
@@ -69,13 +70,14 @@ So, these .NET application that compose solution are:
 - **VueJS** - framework used with javascript for create SPA to show the current data for each 5 seconds.
 
 ## <a name="libraries">What are the libraries used in ours applications?</a>
-- **MediatR** - 
-- **AutoMapper** - 
-- **MongoDB.Driver** - 
-- **EasyNetQ** - 
-- **FluentValidation** - 
-- **XUnit** - 
-- **Moq** - 
+- **MediatR**
+- **AutoMapper**
+- **MongoDB.Driver**
+- **RabbitMq**
+- **RabbitMq.Client**
+- **FluentValidation**
+- **XUnit**
+- **Moq** 
 - **FluentAssertion**
 
 ## <a name="patterns">What are the patterns applied?</a>
