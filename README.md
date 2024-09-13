@@ -48,7 +48,7 @@ So, these .NET application that compose solution are:
 #### Purpose to AWS
 
 #### Purpose to Azure
-![Solution in Azure](https://github.com/pedrofreitaslima/B3ProjectTest/docs/images/BitstampAzure.svg)
+![Solution in Azure](https://github.com/pedrofreitaslima/B3ProjectTest/blob/main/docs/images/BitstampAzure.svg)
 
 ## <a name="howtorun">How to run?</a>
 
