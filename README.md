@@ -44,8 +44,10 @@ So, these .NET application that compose solution are:
 
 ### Solution Design
 #### Default
+![Solution in Azure](https://github.com/pedrofreitaslima/B3ProjectTest/blob/main/docs/images/BitstampDefault.svg)
 
 #### Purpose to AWS
+![Solution in Azure](https://github.com/pedrofreitaslima/B3ProjectTest/blob/main/docs/images/BitstampAWS.svg)
 
 #### Purpose to Azure
 ![Solution in Azure](https://github.com/pedrofreitaslima/B3ProjectTest/blob/main/docs/images/BitstampAzure.svg)
