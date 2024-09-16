@@ -9,10 +9,15 @@
     <ItemGroup>
       <Folder Include="Entities\DynamoDB" />
       <Folder Include="Entities\Kafka" />
-      <Folder Include="Entities\MongoDB" />
       <Folder Include="Entities\RabbitMQ" />
       <Folder Include="Entities\SNS" />
       <Folder Include="Entities\SQS" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="MongoDB.Bson">
+        <HintPath>..\..\..\..\.nuget\packages\mongodb.bson\2.28.0\lib\netstandard2.1\MongoDB.Bson.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>
